@@ -11,5 +11,10 @@
         {
             Console.WriteLine("Instellingen geladen.");
         }
+
+        public void SaveGame()
+        {
+            Console.WriteLine("Game opgeslagen.");
+        }
     }
 }

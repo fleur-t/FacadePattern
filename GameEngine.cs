@@ -11,5 +11,10 @@
         {
             Console.WriteLine("Game gestart!");
         }
+
+        public void Stop()
+        {
+            Console.WriteLine("Game gestopt.");
+        }
     }
 }

@@ -11,5 +11,9 @@
         {
             Console.WriteLine("Speler ingelogd.");
         }
+        public void Disconnect()
+        {
+            Console.WriteLine("Verbinding met gameserver verbroken.");
+        }
     }
 }

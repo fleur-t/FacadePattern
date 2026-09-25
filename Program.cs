@@ -1,29 +1,34 @@
-﻿namespace GameApp
+﻿using FacadePattern;
+
+namespace GameApp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            GraphicsSystem graphics = new GraphicsSystem();
-            AudioSystem audio = new AudioSystem();
-            SaveSystem saveSystem = new SaveSystem();
-            NetworkService network = new NetworkService();
-            GameEngine gameEngine = new GameEngine();
+            //GraphicsSystem graphics = new GraphicsSystem();
+            //AudioSystem audio = new AudioSystem();
+            //SaveSystem saveSystem = new SaveSystem();
+            //NetworkService network = new NetworkService();
+            //GameEngine gameEngine = new GameEngine();
+            GameFacade gameFacade = new GameFacade();
 
-            graphics.Initialize();
-            graphics.SetResolution(1920, 1080);
+            gameFacade.StartGame(developerMode: true, onlineMode: true);
 
-            audio.Initialize();
-            audio.SetVolume(70);
+            //graphics.Initialize();
+            //graphics.SetResolution(1920, 1080);
 
-            saveSystem.LoadSettings();
-            saveSystem.LoadPlayer();
+            //audio.Initialize();
+            //audio.SetVolume(70);
 
-            network.Connect();
-            network.Login();
+            //saveSystem.LoadSettings();
+            //saveSystem.LoadPlayer();
 
-            gameEngine.LoadWorld();
-            gameEngine.Start();
+            //network.Connect();
+            //network.Login();
+
+            //gameEngine.LoadWorld();
+            //gameEngine.Start();
 
             Console.ReadLine();
         }

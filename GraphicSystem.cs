@@ -11,5 +11,9 @@
         {
             Console.WriteLine($"Resolutie ingesteld op {width}x{height}.");
         }
+        public void Shutdown()
+        {
+            Console.WriteLine("Graphics systeem afgesloten.");
+        }
     }
 }

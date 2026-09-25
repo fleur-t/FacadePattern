@@ -11,5 +11,10 @@
         {
             Console.WriteLine($"Volume ingesteld op {volume}%.");
         }
+
+        public void Mute()
+        {
+            Console.WriteLine("Audio gedempt.");
+        }
     }
 }
